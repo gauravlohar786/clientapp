@@ -1,0 +1,25 @@
+# Web Automation Tests
+
+## Overview
+This project contains automated functional tests for a web application using Cypress. The tests cover critical functionalities and are executed in a Docker container to simulate a production-like environment.
+
+## Test Cases
+1. **User Login**: Verifies that a user can log in with valid credentials.
+2. **User Registration**: Verifies that a new user can register.
+3. **Search Functionality**: Verifies that the search functionality works correctly.
+4. **Add Item to Cart**: Verifies that a user can add an item to the cart.
+
+## Project Structure
+- `cypress/integration/tests/`: Contains the test case implementations.
+- `cypress/fixtures/test-data.csv`: Test data used for data-driven testing.
+- `Dockerfile`: Docker configuration to run the tests in a container.
+- `package.json`: Project configuration file.
+
+## Prerequisites
+- Docker
+- Node.js
+
+## Running the Tests
+1. Build the Docker image:
+   ```sh
+   docker build -t web-automation-tests .
